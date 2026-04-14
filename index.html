@@ -91,7 +91,7 @@
 
     <button id="music-control" onclick="toggleMusic(event)">🎵</button>
 
-    <div class="scrolling-title" id="p-title">KING ANKIT BHAIYA</div>
+    <div class="scrolling-title" id="p-title">KING PINTU BHAIYA</div>
 
     <div id="treasure-screen">
         <h1 style="font-family:Cinzel; color:var(--gold);">FOR YOU</h1>
@@ -130,7 +130,7 @@
 
     <div id="final-reveal">
         <div class="box-3d">
-            <h1 style="font-family:'Dancing Script'; font-size: 3.5rem; margin:0;">Happy Birthday<br><span style="color:var(--gold)">Ankit Bhaiya</span></h1>
+            <h1 style="font-family:'Dancing Script'; font-size: 3.5rem; margin:0;">Happy Birthday<br><span style="color:var(--gold)">Pintu Bhaiya</span></h1>
         </div>
         <p style="margin-top:30px; color:var(--gold); font-weight:bold;">DEVELOPED BY ARUSH ❤️</p>
     </div>
@@ -143,7 +143,6 @@
             if(isStarted) return;
             isStarted = true;
 
-            // Audio Start
             music.play().catch(e => console.log("Play blocked"));
             document.getElementById('music-control').style.display = "block";
 
@@ -187,7 +186,6 @@
 
         function verifyPass() {
             const p = document.getElementById('pass').value.toLowerCase().trim();
-            // Sabse robust password check
             if(p === "i am a birthday boy") {
                 document.getElementById('lock-screen').style.display = "none";
                 document.getElementById('final-reveal').style.display = "flex";
